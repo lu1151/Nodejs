@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // condition standard syntax
+    {{if age>18 }}
+    Old enough.
+    {{/if}}
+    {{if age>18 }}
+    Old enough.
+    {{else if age<10}}
+    Toddler
+    {{else}}
+    Teenager
+    {{/if}}
+
+
+
+    // condition original syntax
+    <% if (age >18) { %>
+    Old enough.
+    <% } %>
+    <% if (age >18) { %>
+    Old enough.
+    <% } else if (age<10) { %>
+    Toddler
+    <% } else { %>
+    Teenager
+    <% } %>
+    
+</body>
+
+</html>

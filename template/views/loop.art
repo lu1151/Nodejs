@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // loop standard syntax
+    {{each users}}
+    {{$index}} {{$value.name}} {{$value.age}}
+    {{/each}}
+    {{ include "../common/footer.art"}}
+
+    // loop original syntax
+    <% for(var i = 0; i < users.length; i++){ %>
+    <%= i %> <%= users[i].name %> <%= users[i].age %>
+    <% } %>
+    <% include('../common/footer.art') %>
+
+</body>
+
+</html>
